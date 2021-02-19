@@ -1,0 +1,140 @@
+{% extends 'main/header.html' %}
+{% block title %}About us | Developers!{% endblock %}
+    {% block content %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+
+        <div class="w3-light-grey">
+
+            <!-- w3-content defines a container for fixed size centered content,
+            and is wrapped around the whole page content, except for the footer in this example -->
+            <div class="w3-content" style="max-width:1400px">
+
+            <!-- Header -->
+            <header class="w3-container w3-center w3-padding-32">
+              <h1><b>About Us</b></h1>
+              <p>Welcome to the blog of <span class="w3-tag">Developers</span></p>
+            </header>
+
+            <!-- Grid -->
+            <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+              <!-- Blog entry -->
+              <div class="w3-card-4 w3-margin w3-white">
+                  {% load static %}
+                <img src="{% static 'main/images/img100.jpg' %}" alt="Music" style="width:100%;height:50%;">
+                <div class="w3-container">
+                  <h3><b>THIS PROJECT</b></h3>
+                  <h5>Introduction to idea, <span class="w3-opacity"></span></h5>
+                </div>
+
+                <div class="w3-container">
+                  <p>Song Recommendation system is a web based application. The main purpose of “Song Recommendation System ” is to provide a convenient way for a customer to explore the world of music and have soothing chill out sessions in spare time.
+                      </p>
+                  <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                    </div>
+                    <div class="w3-col m4 w3-hide-small">
+                      <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Blog entry -->
+              <div class="w3-card-4 w3-margin w3-white">
+              <img src="{% static 'main/images/img200.jpg' %}" alt="Song" style="width:200%;height:50%">
+                <div class="w3-container">
+                  <h3><b>BLOG ENTRY</b></h3>
+                  <h5>Title description, <span class="w3-opacity"></span></h5>
+                </div>
+
+                <div class="w3-container">
+                  <p>The world would be a very quiet place. Music is in many ways the fabric of our lives and the definition of society. 
+                     It is a reminder of how things once were, an indication of how things are, and a view of where society is headed. 
+                     Music is a direct reflection of the picture of society. Music can be a way to deliver messages, a poetic medium, a fine art, or nothing more than a source of entertainment. 
+                     No matter what it is used for, music is the perfect art and our lives would be that much less complete without it that life as we know it would not at all be the same without music. 
+                     Music is the perfect art. It has movement, because it progresses over a set period of time. 
+                     All musical works have a beginning and an end. However, music does not restrict the audience in the way that movies or graphic art does. 
+                     The listener can create whatever image she or he wants to when listening to music. 
+                     It is an art that appeals to the conscious mind, but the best music also appeals to the subconscious. 
+                     No thought is required to enjoy good music, though it is often thought-inspiring. 
+                     Instrumental music does not bind the listener into a fixed template in the way that literature and poetry do: the reaction to music is different from person to person.</p>
+                  <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                    </div>
+                    <div class="w3-col m4 w3-hide-small">
+                      <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+              <!-- About Card -->
+              <div class="w3-card w3-margin w3-margin-top">
+                  <!-- {% static 'main/images/img1.jpg' %} -->
+              <img src="" style="width:100%">
+                <div class="w3-container w3-white">
+                  <h4><b>Team</b></h4>
+                  <p>Just we, exploring the universe of Django. We have a heart of love and a interest of Web Development and Data Analysis. We want to share our world with you.</p>
+                </div>
+              </div><hr>
+
+              <!-- Posts -->
+                <div class="w3-card w3-margin">
+                  <div class="w3-container w3-padding">
+                    <h4>Developers</h4>
+                  </div>
+                  <ul class="w3-ul w3-hoverable w3-white">
+                    <li class="w3-padding-16">
+                      <img src="{% static 'main/images/piyush.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                      <span class="w3-large">Piyush Agarwal</span><br><br>
+                      <span>AIT AIML</span>
+                    </li>
+                    <li class="w3-padding-16">
+                      <img src="{% static 'main/images/Rahul.jpeg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                      <span class="w3-large">Rahul Jana</span><br><br>
+                      <span>AIT AIML</span>
+                    </li>
+                    <li class="w3-padding-16">
+                      <img src="{% static 'main/images/vaibhav.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                      <span class="w3-large">Vaibhav Mittal</span><br><br><br>
+                      <span>AIT AIML</span>
+                    </li>
+                    <li class="w3-padding-16">
+                        <img src="{% static 'main/images/Megha.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Megha Thakur</span><br><br>
+                        <span>AIT AIML</span>
+                      </li>
+                      <li class="w3-padding-16">
+                          <img src="{% static 'main/images/Bihari.jpeg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                          <span class="w3-large">Yash Raj</span><br><br>
+                          <span>AIT AIML</span>
+                      </li>
+                  </ul>
+                </div>
+              <hr>
+
+            <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+            </div><br>
+
+            <!-- END w3-content -->
+            </div>
+
+        </div>
+
+{% endblock %}
